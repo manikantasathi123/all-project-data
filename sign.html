@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
+body {
+
+top: 0px;
+
+
+height: 694px;
+
+}
+.container{
+width:100%;
+display: flex;
+height: 100mvh;
+}
+.sign {
+  font-size: 25px;
+  font-family:Poppins,SemiBold;
+  margin-top: 0;
+  margin-bottom: 38px;
+  text-align:left;
+  color: #000;
+  width: 97px;
+  height: 35px;
+}
+.ui{
+width: 50%;
+display: flex;
+justify-content: center;
+}
+.signform{
+margin-top: 68px;
+margin-left: 162px;
+width: 359px;
+height: 632px;
+
+}
+.ui {
+  
+padding-right: 75px;
+  margin-bottom: 25px;
+}
+.image{
+width: 50%;
+padding-left: 50px;
+background: url('image2.png');
+background-repeat: no-repeat; 
+background-size:cover;
+}
+.user{
+  font-size: 16px;
+  color: #000;
+  margin-bottom: 12px;
+  display: block;
+  font-family: Poppins,Medium;
+}
+.submit {
+  height: 45px;
+  background-color: #5B3DA2;
+  margin: 35px 0 25px;
+  text-align: center;
+  border-radius: 6px;
+}
+
+.submit input {
+  color: #fff;
+  padding: 13px 0;
+  background: none;
+  border: none;
+  font-size: 16px;
+  font-family: Poppins,Medium;
+}
+
+
+.inputs {
+  width: 100%;
+  background-color: #F8F8F8;
+  border: 1px solid #F8F8F8;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: Poppins,Regular;
+  padding: 13px 20px;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+.inputs:focus-visible {
+  outline: none;
+}
+
+.direct{
+text-decoration: none;
+}
+.src{
+  text-align: center;
+  font-size: 15px;
+  font-family: Poppins,Regular;
+  margin: 0;
+  padding-bottom: 100px;
+}
+.check{
+width:313px;
+height:20px;
+text-align: left;
+font-family: Poppins,Regular;
+font-size:14px;
+letter-spacing: 0;
+
+}
+.paragraph{
+ height: 20;
+ width: 281;
+ text-align: left;
+ font-size:14px;
+ font-family: Poppins,Regular;
+ opacity: 0.5;
+}
+.a{
+  text-decoration: none;
+}
+@media only screen and (max-width: 300px) {
+.ui {
+ width: 100%;
+}
+}
+@media  only screen and(max-width:300px){
+.image{
+width:100%
+}
+}
+
+
+</style>
+<body>
+    <body>
+        <div class="container">
+          
+          <div class="ui">
+            <form class="signform" name="myform" method="post" onsubmit="validated()" >
+              <h3 class="sign">Sign Up</h3>
+              <p class="paragraph">Please fill this form to create an account</p>
+              <div class="source ">
+                <label class="user">Name*</label>
+                <input type="text" placeholder="Enter your Name" name="uname" class="inputs" id="nameinput">
+              
+                <label class="user">Email*</label>
+                <input type="text" placeholder="your mail@gmail.com" name="email" id="emailinput" class="inputs">
+                <div id="usererror" style="font-size: medium;color:red;visibility: hidden;">
+                  *Email cannot be empty
+                </div>
+            </div>
+              <div class="source">
+                <label class="user">Password*</label>
+                <input type="password" placeholder="Enter your password" name="pwd"id="pasinput" class="inputs">
+                       <label class="user">Confirm Password</label>
+                <input type="password" placeholder="" name="cpwd" id="cnfwinput"class="inputs">
+                <div id="cnferror" style="font-size: medium;color:red;visibility: hidden;">
+                  *confirm password cannot be empty
+              </div>
+              </div>
+      
+                <p class="check"><input type="checkbox" checked="checked">I Accept the <a href="#" class="a">Terms of use & Privacy Policy</a></p>
+              
+              <div class="submit"><input type="submit" value="Signup"></div>
+              
+             <p class="src"> Have already an account?,<a href="./login.html" class="direct">Login</a></p>
+            </form>
+          </div>
+          <div class="image">
+            <script src="validation.js"></script>
+</body>
+</html>
